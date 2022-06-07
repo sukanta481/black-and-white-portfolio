@@ -94,6 +94,9 @@ body {
     font-weight: 600;
     padding: 10px;
   }
+  ul.show{
+      display: none;
+  }
   
   /* this will chage .nav-item color whenever switch will be clicked */
   .dark .nav-item {
@@ -157,8 +160,29 @@ body {
   }
   .square h2 {
     margin: 50px 0 10px 0;
+    font-weight: 700;
   }
-  
+  .square p{
+      font-weight: 500;
+  }
+  #payment{
+      background-image: url("images/payment.png");
+      background-size: cover;
+      opacity: 0.5;
+  }
+  #burger{
+    background-image: url("images/burger.png");
+    background-size:cover;
+  }
+  #fitness{
+      background-image: url("images/fitness.png");
+      background-size: cover;
+  }
+  #dating{
+      background-image: url("images/dating.png");
+      background-size: cover;
+  }
+ 
   /* FOOTER */
   footer {
     height: 300px;
@@ -184,15 +208,15 @@ body {
         
     }
     .navList {
-      display: none;
+      flex-direction: column;
     }
     .menu{
         display: block;
     }
     .switch{
         position: fixed;
-        top: 5px;
-        left: 5px;
+        top: 44px;
+        left: 14px;
     }
     .menu{
         position: fixed;
