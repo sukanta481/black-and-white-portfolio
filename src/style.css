@@ -1,0 +1,206 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    font-family: "Poppins", sans-serif;
+    color: rgb(75, 75, 75);
+  }
+  
+  header {
+    padding: 15px 20px 15px;
+    align-items: flex-start;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ff4d6d;
+    font-weight: 500;
+  }
+  .dark a {
+    color: #ffb3c1;
+  }
+  
+  /* switch section */
+  .switch {
+    width: 80px;
+    height: 40px;
+    background-color: black;
+    border-radius: 25px;
+  }
+  .flicker {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 15px;
+    top: 5px;
+    left: 5px;
+    box-shadow: inset 4px 4px 4px rgb(255, 255, 255),
+      inset -4px -4px 4px rgb(195 193 198 / 90%);
+    transition: 0.3s;
+  }
+  .moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    top: 5px;
+    left: 45px;
+  }
+  .dark {
+    background-color: rgb(57, 57, 57);
+    transition: 300ms;
+  }
+  
+
+  /* menu design */
+  .menu{
+      display: none;
+  }
+  .menu-line{
+      width: 40px;
+      height: 7px;
+      margin-bottom: 5px;
+      background-color: black;
+      transition: 0.3s;
+
+  }
+
+
+  /* logo */
+  .logo {
+    width: 50%;
+    margin-left: 1%;
+  }
+  .logo1 {
+    display: none;
+  }
+  .dark .logo1 {
+    display: block;
+  }
+  .dark .logo2 {
+    display: none;
+  }
+  
+  /* navlist */
+  .navList {
+    margin-right: 10px;
+    padding: 0;
+    display: flex;
+  }
+  .nav-item {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    font-weight: 600;
+    padding: 10px;
+  }
+  
+  /* this will chage .nav-item color whenever switch will be clicked */
+  .dark .nav-item {
+    color: white;
+  }
+  
+  /* whenever switch will clicked flicker will move to left and right */
+  .dark .flicker {
+    transform: translateX(40px);
+  }
+  
+  /* transform all text under body will be white whenever switch will clicked */
+  .dark > * {
+    color: white;
+  }
+  
+  /* main sectin  */
+  .main {
+    height: 80vh;
+  }
+  .main-text {
+    width: 50%;
+    padding: 30px;
+  }
+  
+  /* main section fonts */
+  main h1 {
+    font-size: 4em;
+    line-height: 1em;
+    font-weight: 300;
+    margin: 10px 0;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 10px 0;
+  }
+  p {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    font-weight: 600;
+  }
+  
+  /* sub-section */
+  .square {
+    width: 98%;
+    height: 350px;
+    margin: 1%;
+    background-color: #cccccc;
+    text-align: center;
+  }
+  .dark .square {
+    background-color: rgb(75, 75, 75);
+  }
+  .square h2 {
+    margin: 50px 0 10px 0;
+  }
+  
+  /* FOOTER */
+  footer {
+    height: 300px;
+    background-color: #ced4da;
+  }
+  .dark footer {
+    background-color: black;
+  }
+  footer p {
+    text-align: center;
+    margin: 20px 0;
+  }
+  @media only screen and (min-width: 970px) {
+    .square {
+      width: 48%;
+      margin: 1%;
+      height: 500px;
+    }
+  }
+  @media (max-width: 700px) {
+    .nav{
+        flex-direction: column;
+        
+    }
+    .navList {
+      display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .switch{
+        position: fixed;
+        top: 5px;
+        left: 5px;
+    }
+    .menu{
+        position: fixed;
+        top: 10px;
+        right: 13px;
+    }
+    .dark .menu-line{
+        background-color: white;
+    }
+  }
+  
